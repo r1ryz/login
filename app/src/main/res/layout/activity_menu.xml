@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_menu">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Выберите функцию"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/twName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:paddingBottom="40dp"
+        app:layout_constraintEnd_toEndOf="@id/Welcome"
+        app:layout_constraintStart_toStartOf="@id/Welcome"
+        app:layout_constraintTop_toBottomOf="@id/Welcome"
+        />
+
+    <Button
+        android:id="@+id/btnTriangleS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4E3535"
+        android:onClick="onTriSClick"
+        android:text="Площадь \nтреугольника"
+        android:textSize="20dp"
+        app:iconTint="#353535"
+        app:layout_constraintEnd_toEndOf="@id/twName"
+        app:layout_constraintStart_toStartOf="@id/twName"
+        app:layout_constraintTop_toBottomOf="@id/twName"
+        app:layout_constraintWidth="210dp" />
+
+    <Button
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#43D832"
+        android:onClick="onBackClick"
+        android:text="Назад \nко входу"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/btnTriangleP"
+        app:layout_constraintStart_toStartOf="@id/btnTriangleP"
+        app:layout_constraintTop_toBottomOf="@id/btnTriangleP"
+        app:layout_constraintWidth="210dp" />
+
+    <Button
+        android:id="@+id/btnTriangleP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D60303"
+        android:onClick="onTriPClick"
+        android:text="Периметр \nтреугольника"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/btnTriangleS"
+        app:layout_constraintStart_toStartOf="@id/btnTriangleS"
+        app:layout_constraintTop_toBottomOf="@id/btnTriangleS"
+        app:layout_constraintWidth="210dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

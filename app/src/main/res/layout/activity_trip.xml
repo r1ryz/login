@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripActivity">
+
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Введите A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Введите B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Введите C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:id="@+id/twResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3ADD3E"
+        android:onClick="onCalcClick"
+
+        android:text="Рассчитать"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543"
+        app:layout_constraintWidth="210dp" />
+
+    <Button
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF0404"
+        android:onClick="onBackClick"
+        android:text="Назад \nко входу"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/btCalculate"
+        app:layout_constraintStart_toStartOf="@id/btCalculate"
+        app:layout_constraintTop_toBottomOf="@id/btCalculate"
+        app:layout_constraintWidth="210dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
